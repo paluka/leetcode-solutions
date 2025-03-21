@@ -23,12 +23,12 @@ Each problem directory is prefixed with the problem number and uses kebab-case f
 ```
 leetcode-solutions/
 ├── solutions/
-│   ├── 1-problem-name/
-│   │   ├── problem-name.ts
-│   │   ├── problem-name.py
-│   │   ├── problem-name.java
-│   │   ├── problem-name.go
-│   │   └── problem-name.rs
+│   ├── 1-two-sum/
+│   │   ├── two-sum.ts
+│   │   ├── two-sum.py
+│   │   ├── TwoSum.java
+│   │   ├── two-sum.go
+│   │   └── two-sum.rs
 │   ├── 2-problem-name/
 │   │   ├── problem-name.ts
 │   │   └── ...
@@ -49,10 +49,10 @@ This repository serves as a personal practice ground for algorithm and data stru
 
 Each solution file can be run independently using the appropriate language compiler/interpreter. This can be used to assess whether the code will compile fully.
 
-- TypeScript: `tsc problem-name.ts --target es2015 --lib es2015 && node problem-name.js`
-- Python: `python problem-name.py`
-- Java: `javac problem-name.java && java problem-name`
-- Go: `go run problem-name.go`
-- Rust: `rustc problem-name.rs && ./problem-name`
+- TypeScript: `tsc two-sum.ts --target es2015 --lib es2015,dom && node two-sum.js`
+- Python: `python two-sum.py`
+- Java: `javac TwoSum.java && java TwoSum`
+- Go: `go run two-sum.go`
+- Rust: `rustc two-sum.rs && ./two-sum`
 
 Erik Paluka. 2025.
