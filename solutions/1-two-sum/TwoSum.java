@@ -1,5 +1,23 @@
-class Solution {
-    public int[] twoSum(int[] nums, int target) {
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Arrays;
+
+
+public class TwoSum {
+    public static void main(String[] args) {
+        
+        
+        int[] nums = {2, 7, 11, 15};
+        int target = 9;
+
+        int[] result = twoSum(nums, target);
+        int[] result1 = twoSum1(nums, target);
+
+        System.out.println(Arrays.toString(result));
+        System.out.println(Arrays.toString(result1));
+    }
+
+    public static int[] twoSum(int[] nums, int target) {
 
         if (nums == null || nums.length == 0) {
             return new int[0];
@@ -21,10 +39,8 @@ class Solution {
 
         return new int[0];
     }
-}
 
-class Solution1 {
-    public int[] twoSum1(int[] nums, int target) {
+    public static int[] twoSum1(int[] nums, int target) {
         
         if (nums == null || nums.length == 0) {
             return new int[0];
