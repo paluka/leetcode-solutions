@@ -35,3 +35,12 @@ class Solution1:
                     return [outer_index, inner_index]
 
         return []
+
+
+if __name__ == "__main__":
+
+    solution = Solution()
+    print(solution.two_sum([2, 7, 11, 15], 9))
+
+    solution1 = Solution1()
+    print(solution1.two_sum1([2, 7, 11, 15], 9))
