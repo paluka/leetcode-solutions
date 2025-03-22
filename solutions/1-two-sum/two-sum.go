@@ -4,6 +4,10 @@ import "fmt"
 
 func twoSum(nums []int, target int) []int {
 
+	if nums == nil || len(nums) == 0 {
+		return []int{}
+	}
+
 	numMap := make(map[int]int)
 
 	for idx := 0; idx < len(nums); idx++ {
@@ -22,6 +26,10 @@ func twoSum(nums []int, target int) []int {
 }
 
 func twoSum1(nums []int, target int) []int {
+
+	if nums == nil || len(nums) == 0 {
+		return []int{}
+	}
 
 	for outerIdx := 0; outerIdx < len(nums); outerIdx++ {
 
