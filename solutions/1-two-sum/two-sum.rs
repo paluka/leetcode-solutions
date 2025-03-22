@@ -13,7 +13,7 @@ fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
         map.insert(*value, idx);
     }
 
-    return vec![];
+    vec![]
 }
 
 fn two_sum1(nums: Vec<i32>, target: i32) -> Vec<i32> {
@@ -25,7 +25,7 @@ fn two_sum1(nums: Vec<i32>, target: i32) -> Vec<i32> {
         }
     }
 
-    return vec![];
+    vec![]
 }
 
 fn main() {
