@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 type ListNode struct {
 	Val  int
 	Next *ListNode
@@ -47,6 +49,38 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	return head.Next
 }
 
+func printList(node *ListNode) {
+	for node != nil {
+		fmt.Print(node.Val)
+		if node.Next != nil {
+			fmt.Print("->")
+		}
+		node = node.Next
+	}
+	fmt.Println()
+}
+
 func main() {
+
+	// Test Case 1: 342 + 465 = 807
+	l1 := &ListNode{Val: 2, Next: &ListNode{Val: 4, Next: &ListNode{Val: 3, Next: nil}}}
+	l2 := &ListNode{Val: 5, Next: &ListNode{Val: 6, Next: &ListNode{Val: 4, Next: nil}}}
+	result1 := addTwoNumbers(l1, l2)
+	fmt.Println("Test Case 1: 342 + 465 = 807")
+	printList(result1) // Should be 7->0->8
+
+	// Test Case 2: 0 + 0 = 0
+	l3 := &ListNode{Val: 0, Next: nil}
+	l4 := &ListNode{Val: 0, Next: nil}
+	result2 := addTwoNumbers(l3, l4)
+	fmt.Println("\nTest Case 2: 0 + 0 = 0")
+	printList(result2) // Should be 0
+
+	// Test Case 3: 9999 + 9999 = 19998
+	l5 := &ListNode{Val: 9, Next: &ListNode{Val: 9, Next: &ListNode{Val: 9, Next: &ListNode{Val: 9, Next: nil}}}}
+	l6 := &ListNode{Val: 9, Next: &ListNode{Val: 9, Next: &ListNode{Val: 9, Next: &ListNode{Val: 9, Next: nil}}}}
+	result3 := addTwoNumbers(l5, l6)
+	fmt.Println("\nTest Case 3: 9999 + 9999 = 19998")
+	printList(result3) // Should be 8->9->9->9->1
 
 }
