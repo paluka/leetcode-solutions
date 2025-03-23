@@ -18,6 +18,12 @@ impl Solution {
         l1: Option<Box<ListNode>>,
         l2: Option<Box<ListNode>>,
     ) -> Option<Box<ListNode>> {
+        if l1.is_none() {
+            return l2;
+        } else if l2.is_none() {
+            return l1;
+        }
+
         let mut head = Box::new(ListNode::new(0));
         let mut current_node = head.as_mut();
         let mut carry = 0;

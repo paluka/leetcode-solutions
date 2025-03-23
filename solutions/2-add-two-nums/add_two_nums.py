@@ -10,6 +10,11 @@ class ListNode:
 class Solution:
     def add_two_numbers(self, l1:  Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
 
+        if not l1:
+            return l2
+        elif not l2:
+            return l1
+
         head = ListNode()
         current_node = head
         carry = 0

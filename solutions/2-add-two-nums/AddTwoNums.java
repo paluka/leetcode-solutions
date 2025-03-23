@@ -45,6 +45,12 @@ public class AddTwoNums {
 
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
+        if (l1 == null) {
+            return l2;
+        } else if (l2 == null) {
+            return l1;
+        }
+
         ListNode head = new ListNode();
         ListNode currentNode = head;
         int carry = 0;
