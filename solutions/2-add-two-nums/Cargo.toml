@@ -1,0 +1,8 @@
+[package]
+name = "add_two_nums"
+version = "1.0.0"
+edition = "2024"
+
+[[bin]]
+name = "add_two_nums"
+path = "add_two_nums.rs"
