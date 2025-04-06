@@ -111,8 +111,4 @@ Erik Paluka. 2025.
 | 48  | Rotate Image                                            | Medium     | Array, Math                            |            |        |      |     |      |
 | 49  | Group Anagrams                                          | Medium     | String, Hash Table                     |            |        |      |     |      |
 | 50  | Pow(x, n)                                               | Medium     | Math, Recursion                        |            |        |      |     |      |
-
-.
-.
-.
-| 350 | Intersection of Two Arrays II | Easy | Array, Hash Table | ✅ | ✅ | ✅ | | |
+| 350 | Intersection of Two Arrays II                           | Easy       | Array, Hash Table                      | ✅         | ✅     |      |     |      |
